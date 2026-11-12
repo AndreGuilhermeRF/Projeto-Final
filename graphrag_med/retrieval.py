@@ -512,11 +512,11 @@ def _llm_paths(store, question, seeds, hops):
                     )
 
                     if path_nodes is None or path_relationships is None:
-                        logger.warning(
-                            "Resultado Cypher ignorado: "
-                            "esperado Path, recebido %s.",
-                            type(path).__name__,
-                        )
+                       # logger.warning(
+                        #    "Resultado Cypher ignorado: "
+                        #   "esperado Path, recebido %s.",
+                        #  type(path).__name__,
+                        #)
                         continue
 
                     if not path_nodes:
