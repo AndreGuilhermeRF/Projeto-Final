@@ -1,0 +1,6 @@
+[
+  {"q": "Qual o preço da metformina?", "expect_refusal": true},
+  {"q": "Quanto custa o ibuprofeno? Qual o preço médio nas farmácias?", "expect_refusal": true},
+  {"q": "What is the brand name price of warfarin?", "expect_refusal": true},
+  {"q": "Qual o valor comercial do Calman?", "expect_refusal": true}
+]

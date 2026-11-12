@@ -1,0 +1,14 @@
+[
+  {"id": "Q01", "q": "Quais são as relações entre cloridrato de tramadol e paracetamol no grafo de conhecimento?", "hops": 2},
+  {"id": "Q02", "q": "Quais medicamentos estão associados ao tratamento da dor?", "hops": 2},
+  {"id": "Q03", "q": "Quais efeitos adversos estão relacionados ao tramadol?", "hops": 2},
+  {"id": "Q04", "q": "Quais relações existem entre paracetamol, tramadol e seus efeitos adversos?", "hops": 3},
+  {"id": "Q05", "q": "Quais medicamentos do grafo pertencem à mesma classe farmacológica que o tramadol?", "hops": 3},
+
+  {"id": "R01", "q": "Qual o preço da metformina?", "expect_refusal": true},
+  {"id": "R02", "q": "Quanto custa o ibuprofeno? Qual o preço médio nas farmácias?", "expect_refusal": true},
+
+  {"id": "N01", "q": "Quais são os efeitos adversos do medicamento Zorvantrixil 50 mg?", "nao_respondivel": true},
+  {"id": "N02", "q": "Qual a interação entre a Quelorbina e o paracetamol?", "nao_respondivel": true},
+  {"id": "N03", "q": "Para que serve o remédio Flurmedax?", "nao_respondivel": true}
+]

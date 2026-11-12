@@ -1,0 +1,64 @@
+[
+  {
+    "_status": "RASCUNHO: anotado a partir do texto real da bula CALMAN (registro 137640173). A equipe deve revisar antes de usar em métricas.",
+    "text": "Calman® (Passiflora incarnata, Crataegus rhipidophylla, Salix alba), atua no sistema nervoso central, produzindo efeito sedativo leve, prolongando o período de sono, atuando nos quadros de ansiedade leve, insônia e irritabilidade.",
+    "entities": [
+      {"text": "Calman", "type": "Drug"},
+      {"text": "Passiflora incarnata", "type": "Drug"},
+      {"text": "Crataegus rhipidophylla", "type": "Drug"},
+      {"text": "Salix alba", "type": "Drug"},
+      {"text": "sistema nervoso central", "type": "Anatomy"},
+      {"text": "ansiedade leve", "type": "Condition"},
+      {"text": "insônia", "type": "Condition"},
+      {"text": "irritabilidade", "type": "Condition"}
+    ],
+    "relations": [
+      {"subject": "Calman", "relation": "TREATS", "object": "ansiedade leve"},
+      {"subject": "Calman", "relation": "TREATS", "object": "insônia"},
+      {"subject": "Calman", "relation": "TREATS", "object": "irritabilidade"}
+    ]
+  },
+  {
+    "_status": "RASCUNHO: revisar. Ambiguidade: 'hipersensibilidade' aparece isolada e dentro de 'hipersensibilidade ao látex'.",
+    "text": "Calman® (Passiflora incarnata, Crataegus rhipidophylla, Salix alba) é contraindicado em casos de hipersensibilidade a quaisquer componentes da fórmula e para pacientes que apresentam hipersensibilidade ao látex.",
+    "entities": [
+      {"text": "Calman", "type": "Drug"},
+      {"text": "Passiflora incarnata", "type": "Drug"},
+      {"text": "Crataegus rhipidophylla", "type": "Drug"},
+      {"text": "Salix alba", "type": "Drug"},
+      {"text": "hipersensibilidade", "type": "Condition"},
+      {"text": "hipersensibilidade ao látex", "type": "Condition"}
+    ],
+    "relations": [
+      {"subject": "Calman", "relation": "CONTRAINDICATED_IN", "object": "hipersensibilidade"},
+      {"subject": "Calman", "relation": "CONTRAINDICATED_IN", "object": "hipersensibilidade ao látex"}
+    ]
+  },
+  {
+    "_status": "RASCUNHO: revisar. A relação do Salix alba com derivados de AAS/anticoagulantes foi deixada de fora por ser ambígua (interação ou contraindicação?).",
+    "text": "Devido à presença do Salix alba, deve-se evitar a prescrição para pacientes com úlceras gastrintestinais, déficits de coagulação, hemorragias ativas e pacientes em tratamento com derivados de ácido acetilsalicílico ou anticoagulantes.",
+    "entities": [
+      {"text": "Salix alba", "type": "Drug"},
+      {"text": "úlceras gastrintestinais", "type": "Condition"},
+      {"text": "déficits de coagulação", "type": "Condition"},
+      {"text": "hemorragias ativas", "type": "Condition"},
+      {"text": "ácido acetilsalicílico", "type": "Drug"},
+      {"text": "anticoagulantes", "type": "DrugClass"}
+    ],
+    "relations": [
+      {"subject": "Salix alba", "relation": "CONTRAINDICATED_IN", "object": "úlceras gastrintestinais"},
+      {"subject": "Salix alba", "relation": "CONTRAINDICATED_IN", "object": "déficits de coagulação"},
+      {"subject": "Salix alba", "relation": "CONTRAINDICATED_IN", "object": "hemorragias ativas"}
+    ]
+  },
+  {
+    "_status": "RASCUNHO: revisar. Frase com negação ('não apresentou'): nenhuma relação positiva esperada.",
+    "text": "Resultados de estudos conduzidos em animais indicaram que Passiflora incarnata não apresentou interferências durante a gravidez e a lactação.",
+    "entities": [
+      {"text": "Passiflora incarnata", "type": "Drug"},
+      {"text": "gravidez", "type": "Condition"},
+      {"text": "lactação", "type": "Condition"}
+    ],
+    "relations": []
+  }
+]

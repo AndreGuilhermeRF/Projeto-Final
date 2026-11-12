@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+graphrag_med/data/chatbulario.json
+graphrag_med/data/chatbulario_*.tmp
