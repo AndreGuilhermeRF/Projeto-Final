@@ -171,7 +171,15 @@ A ingestão inicial pode demorar. O limite é controlado por `CHATBULARIO_LIMIT`
 | `ENABLE_LLM_CYPHER` | `true` | Ativa Cypher gerado pela LLM |
 | `OLLAMA_EMBED_MODEL` | `nomic-embed-text` | Modelo de embeddings |
 | `VECTOR_DIMENSIONS` | `768` | Dimensão do vetor |
+| `VECTOR_DIMENSIONS` | `768` | Dimensão do vetor |
 
+## Testes
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+Os testes unitários cobrem validações locais, extração por regras e bloqueio de Cypher de escrita. Para comprovar precisão/recall clínicos de NER e RE, é necessário construir e anotar um conjunto-ouro representativo do ChatBulário. Não confunda testes de software com validação clínica.
 
 ## Limitações e validação necessária
 
